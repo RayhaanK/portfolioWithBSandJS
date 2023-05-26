@@ -137,3 +137,15 @@ testimonials.forEach((data)=> {
     `
 })
 
+// Projects
+
+let projects = [
+    {
+        id: 1,
+        name: 'Cineplex Thumbnail',
+        image:'<img src="https://i.postimg.cc/3w9BTTry/cineplex-Website.png" class="d-block w-100 img-fluid" loading="lazy" alt="Cineplex Thumbnail" style="object-fit: contain;">',
+        description:'This is the Home Page to a website a design called Cineplex. It is a mock website that was just trying to create my own design to other streaming servers like Netflix.'
+    }
+]
+
+
