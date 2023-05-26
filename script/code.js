@@ -37,3 +37,50 @@ education.forEach((data)=> {
     `
 })
 
+// Skills Section
+let skill = [
+    {
+        id: 1,
+        title: 'HTML',
+        description: '<i class="fa-brands fa-html5 fa-beat fa-10x" style="color: #e54c21ff;"></i>',
+        progressbar: 'Specialist',
+    },
+    {
+        id: 2,
+        title: 'CSS',
+        description: '<i class="fa-brands fa-css3-alt fa-beat fa-10x" style="color: #264de4"></i>',
+        progressbar: 'Specialist',
+    },
+    {
+        id: 3,
+        title: 'Bootstrap',
+        description: '<i class="fa-brands fa-bootstrap fa-beat fa-10x" style="color: #8712fbff"></i>',
+        progressbar: 'Specialist',
+    },
+    {
+        id: 4,
+        title: 'Javascript',
+        description: '<i class="fa-brands fa-js fa-beat fa-10x" style="color: #f7df1d;"></i>',
+        progressbar: 'Average',
+    }
+
+
+]
+
+let divSkill = document.querySelector('.skill');
+skill.forEach((data)=> {
+    divSkill.innerHTML += `
+    <div class="col">
+        <h4 class="display-4">${data.title}</h4>
+        <div class="card-body">
+            <p class="text-black">
+                ${data.description}
+            </p>
+            <p class="text-black">
+                ${data.progressbar}
+            </p>
+        </div>
+    </div>
+    `
+
+})
