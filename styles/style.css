@@ -4,6 +4,11 @@ img[alt='Logo'] {
     width: 5rem;
 }
 
+img[alt='Me'] {
+    width: 500px;
+    object-fit: cover;
+}
+
 /* body */
 body {
     text-align: center;
@@ -13,10 +18,10 @@ body {
 :root{
     --primary: rgb(0, 0, 0);
     --secondary: white;
-    --alternative: hsla(144, 27%, 37%, .7);
-    --awesomeColor: darkolivegreen;
-    --green: green;
-    --mainBox-shadow: -8px -3px 23px 5px rgba(105,96,96,0.75);
+    --alternative: #B799FF;
+    --awesomeColor:#ACBCFF ;
+    --green: #ACBCFF;
+    --mainBox-shadow: -8px -3px 23px 5px #acbdffc2;
 }
 /* Education */
 .education {
@@ -34,6 +39,8 @@ body {
 }  
 .card:nth-child(odd) {
     position: relative;
+    box-shadow: 10s .5vw 1vw #acbdffc2;
+    box-shadow: .5vw .2vw .7vw var(--awesomeColor);
 }
 .card:nth-child(odd)::after {
     position: absolute;
@@ -59,7 +66,6 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: var(--awesomeColor);
-    box-shadow: 10s .5vw 1vw rgba(90, 115, 132, 0.9);
 }
 
 /* Media query */
