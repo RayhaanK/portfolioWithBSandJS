@@ -113,6 +113,12 @@ let testimonials = [
         image:'<img src="https://i.postimg.cc/9MTsXWTx/C12-C2-Eighton-Lee-Paulse.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Eighton-Lee Paulse" style="height: 290px; object-fit: contain;">',
         description:"Rayhaan is a very intuitive and intelligent person. I've learnt so much from him. He's very assertive and knows what's right and wrong. His motivation is also unmatched and he is very good at what he does. He's honestly one of the smartest people I know and I would recommend him because he is very good at what he does."
     },
+    {
+        id: 5,
+        name: 'Laiquah Cotie',
+        image:'<img src="https://i.postimg.cc/5Nvjcv6v/C12-Laiquah-Cotie.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Laiquah Cotie" style="height: 290px; object-fit: contain;">',
+        description:"Rayhaan is a hard-worker. He's a very focused and quiet person but if you need him to do anything or even help with anything his always willing to. He's always punctual when it comes to tasks, Rayhaan is one person you'll never have to wait on for anything. He does things to the best of his ability and will put in extra to just make sure that what he does is up to your standards. Rayhaan is very motivated and eager to learn more. He is definitely someone you'd want on your team."
+    },
 
 ]
 
