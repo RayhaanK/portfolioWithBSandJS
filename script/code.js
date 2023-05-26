@@ -26,7 +26,7 @@ let education = [
 let divEducation = document.querySelector('.education');
 education.forEach((data)=> {
     divEducation.innerHTML += `
-    <div class="card">
+    <div class="card dot">
         <h4 class="display-4">${data.year}</h4>
         <div class="card-body">
             <p class="text-white">
@@ -84,3 +84,56 @@ skill.forEach((data)=> {
     `
 
 })
+
+// Testimonials section
+let testimonials = [
+    {
+        id: 1,
+        name: 'Imraan Bernksen',
+        image:'<img src="https://i.postimg.cc/4d1Z8FjW/t0.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Imraan Bernksen" style="height: 290px; object-fit: contain;">',
+        description:'I highly recommend Rayhaan Khan, an aspiring web developer with a passion for creating stunning and functional websites. Rayhaan has a strong foundation in programming languages such as HTML, CSS, and Bootstrap and is constantly learning and staying up-to-date with the latest technologies. Their attention to detail and commitment to delivering high-quality work make them an excellent choice for any web development project.'
+    },
+
+    {
+        id: 2,
+        name: 'Ganiefah Majiet',
+        image:'<img src="https://i.postimg.cc/wTNPCsTg/Screenshot-2023-05-03-100656.png" class="card-img-top img-fluid testicards" loading="lazy" alt="Ganiefah Majiet" style="height: 290px; background-size: 50%; object-fit: contain;">',
+        description:"Someone who I'd definitely recommend. He's always positive and willing to help the next person although he's busy himself, he's intelligent and very hardworking. He is always positive and he always provides everyone with help and motivation."
+    },
+
+    {
+        id: 3,
+        name: 'Nuraan Samsodien',
+        image:'<img src="https://i.postimg.cc/KYVRS5rP/C12-C2-Nuraan-Samsodien.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Nuraan Samsodien" style="height: 290px; object-fit: contain;">',
+        description:"Rayhaan is a highly thought intellectual from my perspective. He is passionate, ambitious, hardworking and always provides a helping hand to anyone who needs it. He has great communication and leadership skills and any company would be lucky to have him on their team."
+    },
+    {
+        id: 4,
+        name: 'Eighton-Lee Paulse',
+        image:'<img src="https://i.postimg.cc/9MTsXWTx/C12-C2-Eighton-Lee-Paulse.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Eighton-Lee Paulse" style="height: 290px; object-fit: contain;">',
+        description:"Rayhaan is a very intuitive and intelligent person. I've learnt so much from him. He's very assertive and knows what's right and wrong. His motivation is also unmatched and he is very good at what he does. He's honestly one of the smartest people I know and I would recommend him because he is very good at what he does."
+    },
+    {
+        id: 5,
+        name: 'Laiquah Cotie',
+        image:'<img src="https://i.postimg.cc/5Nvjcv6v/C12-Laiquah-Cotie.jpg" class="card-img-top img-fluid testicards" loading="lazy" alt="Laiquah Cotie" style="height: 290px; object-fit: contain;">',
+        description:"Rayhaan is a hard-worker. He's a very focused and quiet person but if you need him to do anything or even help with anything his always willing to. He's always punctual when it comes to tasks, Rayhaan is one person you'll never have to wait on for anything. He does things to the best of his ability and will put in extra to just make sure that what he does is up to your standards. Rayhaan is very motivated and eager to learn more. He is definitely someone you'd want on your team."
+    },
+
+]
+
+let divTestimonial = document.querySelector('.testimonial');
+testimonials.forEach((data)=> {
+    divTestimonial.innerHTML += `
+    <div class="card">
+        <h4 class="display-4">${data.name}</h4>
+        <div class="card-body">
+            ${data.image}
+            <p class="text-white testibody">
+                "${data.description}"
+            </p>
+        </div>
+    </div>
+    `
+})
+
