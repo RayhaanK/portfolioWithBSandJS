@@ -1,7 +1,6 @@
 let about = document.querySelector('section#about .row:last-child')
 let aboutContents = [
-    "I am 19 years old.",
-    "I enjoy coding"
+    "My name is Mohamed Rayhaan Khan.My date of birth is 18/04/2004. My home language is English and I can speak Afrikaans too.I currently live in Ottery. My date of birth is 18/04/2004. My home language is English and I can speak Afrikaans too. I currently live in Ottery."
 ]
 // Loop through the content
 aboutContents.forEach( (content)=> {
@@ -12,60 +11,16 @@ aboutContents.forEach( (content)=> {
 let education = [
     {
         id: 1,
-        year: 2020,
-        description: 'I got my certificates on Data science',
-        place: 'Data Camp',
-        type: 'certificate',
-        certificate: ''
+        year: 2022,
+        description: 'I matriculated High School',
+        place: 'Rylands High School',
     },
     {
         id: 2,
-        year: 2019,
-        description: 'I got my certificates on Advanced to Python',
-        place: 'Data Camp',
-        type: 'certificate',
-        certificate: ''
-    },
-    {
-        id: 3,
-        year: 2018,
-        description: 'I got my certificates on Intro to Python',
-        place: 'Data Camp',
-        type: 'certificate',
-        certificate: ''
-    },
-    {
-        id: 4,
-        year: 2015,
-        description: 'I got my certificate on Intro to Android Developer',
-        place: 'Study Jams',
-        type: 'certificate',
-        certificate: ''
-    },
-    {
-        id: 5,
-        year: 2014,
-        description: 'I got my diploma on Software Engineering',
-        place: 'Tshwane University of Technology',
-        type: 'Diploma',
-        certificate: ''
-    },
-    {
-        id: 6,
-        year: 2005,
-        description: 'Completed my course on PC Engineering',
-        place: 'Havatech',
-        type: 'Certificate',
-        certificate: ''
-    },
-    {
-        id: 7,
-        year: 2000,
-        description: 'Grade 12',
-        place: '',
-        type: 'Certificate',
-        certificate: ''
-    },
+        year: 2023,
+        description: 'I am now aspiring to become a Web Developer',
+        place: 'LifeChoices Acadamy',
+    }
 ]
 //
 let divEducation = document.querySelector('.education');
@@ -76,7 +31,6 @@ education.forEach((data)=> {
         <div class="card-body">
             <p class="text-white">
                 ${data.description} @ <span>${data.place}</span> 
-                <a href="${data.certificate}" target="_blank">${data.type}</a>
             </p>
         </div>
     </div>
