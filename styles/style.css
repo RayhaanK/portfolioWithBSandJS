@@ -49,7 +49,7 @@ body {
     position: relative;
     box-shadow: .5vw .2vw .7vw var(--awesomeColor);
 }
-.card:nth-child(odd)::after {
+.dot:nth-child(odd)::after {
     position: absolute;
     top: -2em;
     right: 0;
@@ -63,7 +63,8 @@ body {
     margin-left: auto;
     position: relative;
 }
-.card:nth-child(even)::after {
+
+.dot:nth-child(even)::after {
     position: absolute;
     content: '';
     top: 90px;
@@ -73,6 +74,17 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: var(--awesomeColor);
+}
+
+.testicards {
+    border: 4px solid var(--coolColor) !important; 
+    border-radius: 20px;
+    max-width: fit-content;
+    box-shadow: .5vw .2vw .7vw var(--awesomeColor);
+}
+
+.testibody {
+    margin-top: 1rem;
 }
 
 /* Media query */
@@ -103,5 +115,8 @@ body {
     }
     .card:nth-child(even)::after {
         content: none;
+    }
+    .testicards {
+        max-height: 200px;
     }
 }
